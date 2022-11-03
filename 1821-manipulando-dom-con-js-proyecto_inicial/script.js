@@ -8,18 +8,18 @@ const createTask = (evento) => {
     const list = document.querySelector("[data-list]");
     const task = document.createElement("li");
     task.classList.add("card");
-    input.value = "";
     const content = 
+    //Backticks ${}
     `<div>
         <i class="far fa-check-square icon"></i>
         <span class="task">${value}</span>
     </div>
-    <i class="fas fa-trash-alt trashIcon icon"></i>`
+    <i class="fas fa-trash-alt trashIcon icon"></i>`;
+
     task.innerHTML = content;
 
     list.appendChild(task);
-
-    console.log(content);
+    input.value = "";
 }
 
 btn.addEventListener("click", createTask);
