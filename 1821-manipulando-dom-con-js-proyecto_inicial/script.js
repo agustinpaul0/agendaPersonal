@@ -1,6 +1,6 @@
 const btn = document.querySelector("[data-form-btn]");
 
-//Arrow functions o funciones anónimas
+//Arrow functions o funciones anónimas en javaScript
 const createTask = (evento) => {
     evento.preventDefault();
     const input = document.querySelector("[data-form-input]");
