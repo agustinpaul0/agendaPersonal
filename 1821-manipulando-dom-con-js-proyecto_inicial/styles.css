@@ -125,3 +125,48 @@ form {
 .noTasks {
   font-size: 48px;
 }
+
+@media screen and (min-width: 0px) {
+  .mainCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputForm {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .btnCreate {
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btnCreate {
+    width: 108%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inputForm {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  .btnCreate {
+    width: 25%;
+    padding: 0.7rem;
+  }
+}
